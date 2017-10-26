@@ -1,0 +1,193 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Facility test
+        meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+        link(href='styles.css?t=#version', rel='stylesheet')
+        script(type="text/javascript", src="js/jquery.min.js")
+        script(type="text/javascript", src="js/jquery.jcarousellite.js")
+    body
+        .content-wrapper
+            .menu
+                .row.middle-lg.middle-md.middle-sm
+                    .col-lg-1.col-md-1.col-sm-1
+                        img(src="images/logo.svg" max-width="70")
+                    .col-lg-2.col-md-4.col-sm-3
+                        .logo-name facility test
+                    .col-lg-offset-4.col-md-offset-1.col-sm-offset-1.col-lg-5.col-md-6.col-sm-7
+                        .row.around-lg.around-md.around-sm.end-lg.end-md.end-sm
+                            .col-xs-12.col-md-12.col-sm-12.between-lg.between-md.between-sm#navigation
+                                a(href="#section1") full slider
+                                a(href="#section2") mini slider
+                                a(href="#section3") columns
+                                a(href="#section4") article
+                                a(href="#section5") map
+        .head-mobile
+            .row.middle-xs.center-xs
+                input#hidden(type="checkbox", class="hidden")
+                label.open-menu-mobile(for="hidden")
+                .col-xs-4
+                    img(src="images/logo.svg" width="70")
+                .menu-mobile
+                    .col-xs-12
+                        img(src="images/logo.svg" width="70")
+                    .close-menu-mobile +
+                    #navigation-mobile
+                        .row.center-xs
+                            a(href="#section1") full slider
+                        .row.center-xs
+                            a(href="#section2") mini slider
+                        .row.center-xs
+                            a(href="#section3") columns
+                        .row.center-xs
+                            a(href="#section4") article
+                        .row.center-xs
+                            a(href="#section5") map
+        .head-block.col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12#viewport
+                ul#slidewrapper
+                    .row
+                        li.slide
+                            img.slide-img.col-lg-12.col-md-12.col-sm-12.col-xs-12(src="images/slider3.jpg" alt='1')
+                        li.slide
+                            img.slide-img.col-lg-12.col-md-12.col-sm-12.col-xs-12(src="images/slider.jpg" alt='2')
+                        li.slide
+                            img.slide-img.col-lg-12.col-md-12.col-sm-12.col-xs-12(src="images/slider2.jpg" alt='3')
+            .full-slider#section1.row.middle-lg.middle-md.middle-sm.middle-xs
+                .content-wrapper
+                    .row.middle-lg.middle-md.middle-sm.middle-xs
+                        .col-lg-1.col-md-1.col-sm-1.center-lg.center-md.center-sm(style="height: 50px;display: flex;")
+                            .previous-button-white
+                                svg(viewBox="0 0 129 129" enable-background="new 0 0 129 129")
+                                    g
+                                        path(d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z")
+                        .col-lg-offset-2.col-md-offset-2.col-sm-offset-1.col-xs-offset-1.col-lg-6.col-md-6.col-sm-8.col-xs-10
+                            .head-title.row.center-lg.center-md.center-sm.center-xs full slider
+                            .head-description.row.center-lg.center-md.center-sm.center-xs Lorem ipsum dolor sit amet, consectetur
+                                br
+                                | adipisicing elit. Alias at consectetur cumque
+                                br
+                                | dignissimos, dolorem doloremque dolores
+                                br
+                                | eaque incidunt itaque libero maiores, minima
+                                br
+                                | minus necessitatibus nesciunt nostrum
+                                br
+                                | pariatur, quidem vero vitae.
+                            .head-description-mobile.row.center-xs
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at consectetur cumque dignissimos, dolorem doloremque dolores eaque incidunt itaque libero maiores, minima minus necessitatibus nesciunt nostrum pariatur, quidem vero vitae.
+                            .row.center-lg.center-md.center-sm.center-xs
+                                .col-lg-6.col-md-6.col-sm-6.col-xs-6
+                                    .row
+                                        a.button-rounded.js-show-popup(href="#") popup
+                        .col-lg-offset-2.col-md-offset-2.col-sm-offset-1.col-lg-1.col-md-1.col-sm-1.center-lg.center-md.center-sm(style="height: 50px;display: flex;")
+                            .next-button-white
+                                svg(viewBox="0 0 129 129" enable-background="new 0 0 129 129")
+                                    g
+                                        path(d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z")
+                ul#slider-dots
+        .content-wrapper
+            .row.center-lg.center-md.center-sm.center-xs#section2
+                h1 Mini slider
+            .mini-slider.row.middle-lg.middle-md
+                .desktop-row-button.col-lg-1.col-md-1
+                    .row.center-lg.center-md(style="height: 50px;")
+                        .previous-button-gray
+                            svg(viewBox="0 0 129 129" enable-background="new 0 0 129 129")
+                                g
+                                    path(d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z")
+                .col-lg-10.col-md-10.col-sm-12.col-xs-12
+                    .row-slide.row.around-lg.around-md.around-sm
+                        #mini-slider
+                            ul
+                                li
+                                    img(src="images/slider.jpg" style="width: 100%; height: auto")
+                                li
+                                    img(src="images/slider2.jpg" style="width: 100%; height: auto")
+                                li
+                                    img(src="images/slider3.jpg" style="width: 100%; height: auto")
+                .desktop-row-button.col-lg-1.col-md-1
+                    .row.center-lg.center-md(style="height: 50px;")
+                        .next-button-gray
+                            svg(viewBox="0 0 129 129" enable-background="new 0 0 129 129")
+                                g
+                                    path(d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z")
+                .col-xs-12
+                    .tablet-row-button.row.middle-md.middle-sm.middle-xs
+                        .col-md-offset-5.col-sm-offset-5.col-xs-offset-4.col-md-1.col-sm-1.col-xs-2
+                            .row.center-md.center-sm.center-xs(style="height: 50px;")
+                                .previous-button-gray
+                                    svg(viewBox="0 0 129 129" enable-background="new 0 0 129 129")
+                                        g
+                                            path(d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z")
+                        .col-md-1.col-sm-1.col-xs-2
+                            .row.center-md.center-sm.center-xs(style="height: 50px;")
+                                .next-button-gray
+                                    svg(viewBox="0 0 129 129" enable-background="new 0 0 129 129")
+                                        g
+                                            path(d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z")
+            .row.center-lg.center-md.center-sm.center-xs#section3
+                h1 Columns
+            .column.col-lg-offset-1.col-md-offset-1.col-lg-10.col-md-10.col-sm-12.col-xs-12
+                .column-row.row.between-lg.between-md.between-sm.between-xs
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                        h2 Title lorem ipsum
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                        h2 Title lorem ipsum
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem. Aut, consectetur, ullam? Saepe.
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                        h2 Title lorem ipsum
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem.
+                .row.around-lg.between-lg.between-md.between-sm.between-xs
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                        h2 Title lorem ipsum
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem. Aut, consectetur, ullam? Saepe.
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                        h2 Title lorem ipsum
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit.
+                    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+                        h2 Title lorem ipsum
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aspernatur harum id placeat velit. Commodi distinctio doloribus dolorum eveniet iure modi obcaecati optio perferendis sed voluptatem. Aut, consectetur, ullam? Saepe.
+            .row.center-lg.center-md.center-sm.center-xs#section4
+                h1 article
+                    .row.center-lg.center-md.center-sm.center-xs
+            .col-lg-offset-2.col-md-offset-2.col-sm-offset-2.col-lg-8.col-md-8.col-sm-8.col-xs-12
+                h3 title h3
+            .col-lg-offset-2.col-md-offset-2.col-sm-offset-2.col-lg-8.col-md-8.col-sm-8.col-xs-12
+                .article-body
+                    |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, dolore ea eaque explicabo natus nihil porro ullam.
+                    p
+                    |Aliquid debitis deserunt dolore ducimus earum eligendi et ex exercitationem expedita facilis fugit illo laborum nesciunt odio officia omnis perferendis possimus quod recusandae, repudiandae, sequi similique velit.
+                    b  Amet aspernatur
+                    | dolorem esse, exercitationem explicabo, harum ipsum laborum laudantium minus modi nisi repellendus tempora voluptate? Ab placeat, reprehenderit! Ab aliquid aspernatur, consequatur deserunt distinctio doloribus eos, explicabo illo, molestiae
+                    a(href="#")  mollitia natus nobis
+                    |  perspiciatis quaerat quo sint tempore ullam vitae.
+            .col-lg-offset-2.col-md-offset-2.col-sm-offset-2.col-lg-8.col-md-8.col-sm-8.col-xs-12
+                h3 title h3
+            .col-lg-offset-2.col-md-offset-2.col-sm-offset-2.col-lg-8.col-md-8.col-sm-8.col-xs-12
+                .article-body
+                    p
+                    | Aliquam asperiores,
+                    i  blanditiis earum ipsam maxime
+                    |  nobis odio optio recusandae repellendus reprehenderit rerum saepe sapiente similique, totam voluptas! Autem dolores omnis quas sed! Aut beatae consequatur
+                    ins  dicta est illum incidunt
+                    |  obcaecati officiis placeat, quidem, sapiente ullam voluptatum. Id, impedit nesciunt?
+                    p
+                    |Atque cum cumque, dolores ducimus ea et expedita id illo incidunt, iusto nam non nostrum omnis perspiciatis quisquam repellat reprehenderit saepe sequi sint tempore ullam velit.
+        #section5
+            iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1263247.884145608!2d29.451914099893735!3d50.193115992057834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1508592629300" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen)
+        .popup-overlay
+            .popup-body-desktop
+                .js-close-popup.popup-close +
+                p This is popup
+                button.button-rounded.js-close-popup Close
+            .popup-body
+                .js-close-popup.popup-close +
+                form#popup
+                    p This is popup
+                    input(type="text" name="username" placeholder="Your name")
+                    input(type="text" name="usermail" placeholder="Your e-mail")
+                    button.button-rounded.js-close-popup(type="submit") submit
+script(type="text/javascript", src="index.js")

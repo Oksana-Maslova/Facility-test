@@ -1,0 +1,39 @@
+{
+  "name": "jcarousellite",
+  "title": "jCarouselLite",
+  "description": "A light weight carousel plugin for jquery. The Original jCarouselLite",
+  "author": {
+    "name": "Ganeshji Marwaha",
+    "url": "http://www.gmarwaha.com/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ganeshmax/jcarousellite/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.4"
+  },
+  "main": "jquery.jcarousellite.js",
+  "ignore": [
+    "demo/",
+    "lib/",
+    "test/",
+    "src/",
+    "versions/",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "homepage": "https://github.com/ganeshmax/jcarousellite",
+  "_release": "fceadf8c4d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fceadf8c4df5bd7ec0580e01c950f8f8131e81dd"
+  },
+  "_source": "https://github.com/ganeshmax/jcarousellite.git",
+  "_target": "*",
+  "_originalSource": "jcarousellite",
+  "_direct": true
+}
